@@ -1,0 +1,5 @@
+train (t-8szdem14d8adcpysidh6vq6jz) {
+  utterance ("[g:SmartPhone_Info] (삼성전자)[v:Comp] (안드로이드 9.0)[v:Os] 탑재된 스마트폰 보여줘.")
+  plan (Y2BhUEsqSszMSy3SK85NLAnIyM9LjXfLzEvRC85NLILyPfPS8hk0cagDEfHBMDGwUmkcSp3zcwsYJHFI+hczMDMwMjABSQYgDYIQAOKDRQE=)
+  last-modified (1556938004564)
+}

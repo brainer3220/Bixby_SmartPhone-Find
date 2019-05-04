@@ -1,0 +1,5 @@
+train (t-n9562w6iwxhvj4v0mfid6m5xi) {
+  utterance ("[g:SmartPhone_Info] (갤럭시 노트9)[v:Name] 사양 보여줘.")
+  plan (Y2BmUEsqSszMSy3SK85NLAnIyM9LjXfLzEvRC85NLILyPfPS8hk0cagDEfHBMDGwUmkcSv0Sc1MZmBgYgZgBSDIygAATBAMA)
+  last-modified (1556883250746)
+}

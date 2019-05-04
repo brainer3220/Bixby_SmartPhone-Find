@@ -1,0 +1,5 @@
+train (t-hj1ra8pcecjyatm27x54p8j0h) {
+  utterance ("[g:SmartPhone_Info] (삼성전자)[v:Comp] 휴대폰 보여줘.")
+  plan (Y2BmUEsqSszMSy3SK85NLAnIyM9LjXfLzEvRC85NLILyPfPS8hk0cagDEfHBMDGwUmkcSp3zcwsYmBgYgZgBSDIygAATBAMA)
+  last-modified (1556860422779)
+}

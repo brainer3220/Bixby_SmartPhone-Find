@@ -1,0 +1,13 @@
+endpoints {
+  action-endpoints {
+    
+    action-endpoint (Find_SmatPhoneInfo) {
+      accepted-inputs (comp, name, os)
+      local-endpoint ("Find_SmartPhoneInfo.js")
+    }
+    action-endpoint (ComponyOfSmartPhone) {
+      accepted-inputs (comp)
+      local-endpoint ("ComponyOfSmartPhone.js")
+    }
+  }
+}

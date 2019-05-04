@@ -1,0 +1,12 @@
+capsule {
+  id (brainer.smatPhone_Find)
+  version (0.0.1)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US) {enabled (false)}
+    target (bixby-mobile-ko-KR)
+  }
+  runtime-flags {
+    support-halt-effect-in-computed-inputs
+  }
+}

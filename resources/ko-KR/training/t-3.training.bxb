@@ -1,0 +1,5 @@
+train (t-313h6lg4qluuh38sm8p0bxyjb) {
+  utterance ("[g:SmartPhone_Info] (갤럭시 S7 Edge)[v:Name] 사양 보여줘.")
+  plan (Y2BikE4qSszMSy3SK85NLAnIyM9LjXfLzEvR80vMTWVQwyEZnJtYBOV75qXlMzAwMDIwATEQAAA=)
+  last-modified (1556937812384)
+}

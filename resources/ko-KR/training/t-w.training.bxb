@@ -1,0 +1,10 @@
+train (t-w3f5ypt7qkyw7d72hs6ne0nb7) {
+  utterance ("[g:SmartPhone_Info] (삼성전자)[v:Comp]의 (갤럭시 S10 5G)[v:Name] 스펙 보여줘.")
+  plan (Y2BhUEsqSszMSy3SK85NLAnIyM9LjXfLzEvRC85NLILyPfPS8hk0cagDEfHBMDGwUmkcSp3zcwtwSvol5qYyMDMwMjABSQYgDYIQAOKDRQE=)
+  last-modified (1556864184770)
+}
+train (t-waeo65slfpoqzqywnsv99dknz) {
+  utterance ("[g:SmartPhone_Info] (갤럭시 S10 5G)[v:Name] 사양 보여줘.")
+  plan (Y2BmUEsqSszMSy3SK85NLAnIyM9LjXfLzEvRC85NLILyPfPS8hk0cagDEfHBMDGwUmkcSv0Sc1MZmBgYgZgBSDIygAATBAMA)
+  last-modified (1556890316014)
+}

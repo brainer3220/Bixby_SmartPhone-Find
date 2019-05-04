@@ -1,0 +1,19 @@
+action (Find_SmatPhoneInfo) {
+  type(Search)
+  description (스마트폰의 일부 정보를 가지고, 전체 또는 일부의 정보를 얻음.)
+  collect {
+    input (name) {
+      type (Name)
+      min (Optional) max (One)
+    }
+    input (comp) {
+      type (Comp)
+      min (Optional) max (One)
+    } 
+    input (os) {
+      type (Os)
+      min (Optional) max (One)
+    }
+  }
+  output (SmartPhone_Info)
+}

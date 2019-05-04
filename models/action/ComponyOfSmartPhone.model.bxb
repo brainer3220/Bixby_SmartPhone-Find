@@ -1,0 +1,11 @@
+action (ComponyOfSmartPhone) {
+  type(Search)
+  description (제조사의 정보를 얻어, 제조사 스마트폰을 얻음.)
+  collect {
+    input (comp) {
+      type (Comp)
+      min (Required) max (One)
+    }
+  }
+  output (SmartPhone_Info)
+}
