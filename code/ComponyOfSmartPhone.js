@@ -19,12 +19,13 @@ module.exports.function = function ComponyOfSmartPhone (comp) {
   }
   
   console.log(lent)
-  for(let i = 0; i < lent; i++){
-    if(PhoneData.length =! i) {
-      return PhoneData[i];
-      console.log(i)
-    }
-  }
+  // for(let i = 0; i < lent; i++){
+  //   if(PhoneData.length =! i) {
+  //     return PhoneData[i];
+  //     console.log(i)
+  //   }
+  // }
   console.log(PhoneData[0], PhoneData[1], PhoneData[2])
-  // return [PhoneData[0], PhoneData[1]];
+  // return Phonedata;
+  return [PhoneData[0], PhoneData[1], PhoneData[2]];
 }

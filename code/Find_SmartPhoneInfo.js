@@ -1,10 +1,22 @@
 module.exports.function = function find_SmartPhoneInfo (comp, name, os) {
   const SmartPhoneData = require("./data/SmartPhone_Data.js");
+  
+  const Comp = require("./data/PhoneData/SmartPhone_Spec/Comp.js")
+  
+  // Samsugn SmartPhone 모음.
   const Samsung_Galaxy_S = require("./data/PhoneData/SmartPhone/Samsung/Galaxy_S.js")  // Galaxy S Series File
   const Samsung_Galaxy_Note = require("./data/PhoneData/SmartPhone/Samsung/Galaxy_Note.js")  // Galaxy Note Series File
   const Samsung_Galaxy_Fold = require("./data/PhoneData/SmartPhone/Samsung/Galaxy_Fold.js")  // Galaxy Fold Series File
   const Samsung_Galaxy_A = require("./data/PhoneData/SmartPhone/Samsung/Galaxy_A.js")  // Galaxy A Series File
   const Smasung_Galaxy_M = require("./data/PhoneData/SmartPhone/Samsung/Galaxy_M.js")  // Galaxy M Series File
+  
+  // LG전자 SmartPhone 모음.
+  const Lg_G = require("./data/PhoneData/SmartPhone/LG/G_Series.js") // LG G Series File
+  const Lg_Pro = require("./data/PhoneData/SmartPhone/LG/Pro_Series.js")  // LG Pro Seires File
+  const Lg_V = require("./data/PhoneData/SmartPhone/LG/V_Series")  // LG Pro Series File
+  
+  // Google SmartPhone 모음
+  const Google_Pixel = require(".data/PhoneData/SmartPhoneData/Google/Pixel.js")  // Google Pixel Series File
   
   const console = require("console");
   
@@ -14,11 +26,11 @@ module.exports.function = function find_SmartPhoneInfo (comp, name, os) {
   
   var PhoneData = null;
 
-  // 제조사와 기기의 이름을 알고있을 경우 빠르게 SmartPhone_Data를 찾는다.
-  if(String(comp) =! null && String(name) =! null)  {
-    if(String(comp) == Samsung_Galaxy_S.comp) { // Samsung SmartPhone 비교
+  // 제조사의 이름과 모델을 알고 있을 경우.
+  if(String(comp) =! null && String(name)  =! null && String(os) == null){
+    if(Samsung_Galaxy_S[0].comp == String(comp)) {
       for(let i = 0; i < Samsung_Galaxy_S.length; i++) {  // Galaxy S Series들의 비교
-        if(Samsung_Galaxy_S.name == String(name)) {
+        if(Samsung_Galaxy_S[i].name == String(name)) {
           PhoneData = Samsung_Galaxy_S[i];
           return PhoneData;
           break;
@@ -37,15 +49,15 @@ module.exports.function = function find_SmartPhoneInfo (comp, name, os) {
         }
       }
     }
-    else if(String(comp) == LG) {
-      
-    }
-    else if(String(comp) == Google) {
-      
-    }
+  }
+  else if(Lg_G[0].comp == String(comp)) {
+    
+  }
+  else if(Google_Pixel[0].com == String(comp)) {
+    
   }
   
-  // 스마트폰 이름만 으로 찾기.
+  // 스마트폰 이름만 알고 있는 경우.
   if(SmartPhoneData[i].name == String(name) && String(comp) == null && String(os) == null) {
       for(let i = 0; i < Samsung_Galaxy_S.length; i++) {  // Galaxy S Series들의 비교
         if(Samsung_Galaxy_S.name == String(name)) {
