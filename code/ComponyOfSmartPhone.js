@@ -11,20 +11,26 @@ module.exports.function = function ComponyOfSmartPhone (comp) {
   var PhoneData = new Array;
   let lent = 0;
   
-  for(let i = 0; i < SmartPhoneData.length; i++) {
-    if(SmartPhoneData[i].comp == String(comp)) {
-      PhoneData[lent] = SmartPhoneData[i];
-      lent++;
+  if(String(comp) =! null){
+    if(Samsung_Galaxy_S[0].comp == String(comp))  {         // Samsung SmartPhone Search
+      for(let i = 0; i < Samsung_Galaxy_S.length; i++)  {   // Galaxy S Series Array Add
+        PhoneData[i] = Samsung_Galaxy_S[i].name;
+      }
+      for(let i = 0; i < Samsung_Galaxy_Note.length; i++) { // Galaxy Note Series Array Add
+        PhoneData.push(Samsung_Galaxy_Note[i].name)
+      }
+      for(let i = 0; i < Samsung_Galaxy_Fold.length; i++) { // Galaxy Fold Series Array Add
+        PhoneData.push(Samsung_Galaxy_Fold[i].name)
+      }
+      for(let i = 0; i < Samsung_Galaxy_A.length; i++)  {
+        PhoneData.push(Samsung_Galaxy_A[i].name)
+      }
     }
+    else if()
   }
   
   console.log(lent)
-  // for(let i = 0; i < lent; i++){
-  //   if(PhoneData.length =! i) {
-  //     return PhoneData[i];
-  //     console.log(i)
-  //   }
-  // }
+
   console.log(PhoneData[0], PhoneData[1], PhoneData[2])
   // return Phonedata;
   return [PhoneData[0], PhoneData[1], PhoneData[2]];
