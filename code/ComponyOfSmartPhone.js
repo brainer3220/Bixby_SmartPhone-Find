@@ -34,14 +34,14 @@ module.exports.function = function ComponyOfSmartPhone (comp) {
         PhoneData.push(Samsung_Galaxy_A[i].name)
       }
     }
-    else if(Lg_G[0].comp == String(comp)) {
-      for(let i = 0; i < Lg_G.length; i++)  {
+    else if(Lg_G[0].comp == String(comp)) {     // LG SmartPhone Search
+      for(let i = 0; i < Lg_G.length; i++)  {   // LG G Series Array Add
         PhoneData.push(Lg_G[i].name)
       }
-      for(let i = 0; i < Lg_Pro.length; i++)  {
+      for(let i = 0; i < Lg_Pro.length; i++)  { // LG G Pro Series Array Add
         PhoneData.push(Lg_Pro[i].name)
       }
-      for(let i = 0; i < Lg_V.length; i++)  {
+      for(let i = 0; i < Lg_V.length; i++)  {   // LG V Series Array Add
         PhoneData.push(Lg_V[i].name)
       }
     }
